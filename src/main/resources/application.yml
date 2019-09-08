@@ -1,0 +1,40 @@
+security:
+  mac:
+    key: testKey___123456
+    delimiter: _
+  jwt:
+    key-store: classpath:keystore.jks
+    key-store-password: letmein
+    key-pair-alias: mytestkey
+    key-pair-password: changeme
+
+spring:
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+  datasource:
+    #jndi-name: "java:jdbc/mysqlds"
+    driverClassName: com.mysql.jdbc.Driver
+    jdbc-url: jdbc:mysql://localhost:3306/localDB
+    url: jdbc:mysql://localhost:3306/localDB
+    username: root
+    password: 123
+  jpa:
+    generate-ddl: false
+    show-sql: false
+    database: default
+second:
+  datasource:
+    #jndi-name: "java:jdbc/mysqlds"
+    driverClassName: com.mysql.jdbc.Driver
+    jdbc-url: jdbc:mysql://localhost:3306/secondDB
+    #url: jdbc:mysql://172.28.9.103:3306/pce
+    username: root
+    password: 123
+
+logging:
+  level:
+    org.springframework.web: INFO
+    guru.springframework.controllers: INFO
+    org.hibernate: INFO
+    org.springframework.security: INFO
