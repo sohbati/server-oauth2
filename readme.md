@@ -8,5 +8,6 @@
 *  Two DB connection configuration(Spring data)
 *  Business error management strategy
 *  Aspect base client communication validation(MAC and IP check) 
+*  Weblogic friendly
 *  Lombok in Entities
 
