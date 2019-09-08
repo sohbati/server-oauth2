@@ -9,3 +9,4 @@
 4 - Business error management strategy
 5 - Aspect base client communication validation(MAC and IP check) 
 6 - Lombok in Entities
+
